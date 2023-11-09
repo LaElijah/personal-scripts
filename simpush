@@ -1,0 +1,13 @@
+#!/bin/bash
+
+git add . 
+function push() {
+	 
+	git commit -m $1
+	git push 
+	echo "Pushed" 
+}
+
+read -p "Enter your commit message: " message
+
+push $message
